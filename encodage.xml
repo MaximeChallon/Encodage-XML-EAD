@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "ead.dtd">
+<ead>
+    <eadheader>
+        <eadid></eadid>
+        <filedesc>
+            <titlestmt>
+                <!-- j'ai fais le choix de ne pas mettre les cotes comme appartenant au titre, mais au did de archdesc -->
+                <titleproper>REPERTOIRE</titleproper>
+                <subtitle>MINISTERE : EDUCATION NATIONALE<lb/>DIRECTION : CITE INTERNATIONALE UNIVERSITAIRE DE PARIS (CIUP)<lb/>BUREAU : </subtitle>
+                <author>ARCHIVES NATIONALES<lb/>SECTION DES MISSIONS<lb/>CENTRE DES ARCHIVES CONTEMPORAINES</author>
+            </titlestmt> 
+        </filedesc>
+        <!-- Les paragraphes de communicabilité et d'étendue matérielle présents sur la page de titre seront insérés dans l'archdesc et les balises correspondantes -->
+        <profiledesc>
+            <creation>Cet instrument de recherche a été encodé en XML conformément à la DTD EAD (version 2002) par Maxime Challon pour l'évaluation du cours de XML/EAD du master 2 Technologies Numériques Appliquées à l'Histoire de l'Ecole nationale des Chartes.</creation>
+            <langusage>Instrument de recherche rédigé en <language langcode="fre">français</language></langusage>
+            <descrules>Ce répertoire numérique est rédigé conformément à la norme ISAD (G).</descrules>
+        </profiledesc>
+    </eadheader>
+    <archdesc level="fonds">
+        <did>
+            <unitid>COTE CAC : 20090013<lb/>COTE INTERNE : </unitid>
+            <origination>
+                <corpname normal="France. Ministère de l'Education Nationale. Direction de la Cité internationale universitaire de Paris (CIUP)">Le fonds présenté ci-dessous a été versé par la Fondation nationale de la Cité internationale universitaire de Paris (CIUP). Il provient de la délégation générale et du secrétariat général.</corpname>
+            </origination>            
+            <physdesc>
+                <dimensions> NOMBRE DE CARTONS..............865 DIMABS + 1 CARTON 48X34X13</dimensions>
+                <extent>1200 articles</extent>
+                <extent>dans 872 cartons de type Dimab et 1 carton 48x34x13.</extent>
+            </physdesc>
+        </did>
+        <accessrestrict>
+            <p>COMMUNICABILITE................LIBRE SAUF 50 ANS <lb/>(ART 47, 50, 53, 148-165, 195-200, 205, 206,<lb/>224, 225, 232, 267, 305-310, 315, 317, 446, 449,<lb/>450, 476, 478, 490-493, 496-499, 510-515, 517_539,<lb/>540-1036, 1050, 1089, 1096, 1106, 1116, 1161, 1172,<lb/>1188, 1192)</p>
+        </accessrestrict>
+        <!-- je suivrai les niveaux de titre de l'introduction en créant un bioghist par sous-titre avec une balise head puis des balises p: ici est présenté un historique du producteur. Seule la CIUP est dans le titre "producteur", mais les autres titres portant aussi sur la CIUP, je les considère comme faisant partie du bioghist -->
+        <bioghist>
+            <head>Cité Internationale Universitaire de Paris</head>
+            <p>Construite à la lisière de Paris, l’originalité de la Cité tient plus de sa conception que de l’importance quantitative de ces équipements. Elle s’est adaptée aux conditions changeantes de la vie estudiantine et universitaire et se découvre, dans le respect de sa mission fondamentale, des vocations nouvelles.</p>
+            <p>Créée en 1925, elle doit son développement au concours de personnalités, d’institutions françaises et étrangères et de pays qui lui ont façonné une physionomie originale. Ce caractère particulier, à la fois universitaire, culturel et international, a été voulu dès l’origine par le créateur de la Cité, André Honnorat, et par tous ceux qui contribuèrent avec lui à son développement. Il sollicite, en France comme à l’étranger, les banquiers, les industriels, les collectivités locales, les gouvernements, afin de recueillir des fonds ; il multiplie voyages et conférences pour exposer l’idéal de la Cité, œuvre de paix pour les jeunes et par les jeunes. Afin de coordonner la somme des initiatives, on crée une Fondation nationale, personne morale de droit privé reconnue d’utilité publique, à laquelle l’Université de Paris donne mandat de construire et d’administrer la Cité. Le succès est immédiat.</p>
+            <p>Suite à l’ouverture de la première maison, la fondation Emile et Louise Deutsch de la Meurthe, d’autres suivent. Un homme d’affaires belge, un comité de personnalités canadiennes, un mécène argentin, une riche propriétaire cubaine, des grandes écoles, des gouvernements étrangers décident de construire pour les étudiants de leur pays ou de leur établissement une maison à la Cité. De 1925 à 1939, on relève 19 créations de maisons auxquelles il faut ajouter l’aménagement du parc et en 1936, l’achèvement de la Maison internationale, financée par John D. Rockefeller Jr. Après l’épreuve de la guerre, le mouvement reprend et, de 1945 à 1969, 17 autres maisons sont ouvertes ainsi que l’Hôpital internationale universitaire de Paris (HIUP). La capacité d’accueil est désormais de 5000 à 5500 lits, répartis dans les maisons soumises à des règlements généraux communs mais ayant une autonomie plus ou moins grande par rapport à la Fondation nationale, selon qu’elles lui sont directement rattachées ou qu’elles ont conservé leur propre conseil d’administration. Depuis cette date, s’il n’y a pas eu de construction nouvelle, de nombreux travaux de rénovation ont été effectués afin de moderniser les équipements. Les mécènes sont sans doute moins nombreux qu’autrefois mais les gouvernements étrangers et les pouvoirs publics français apportent toujours leur aide à une institution dont il n’y a pas d’exemple réellement comparable dans le monde.</p>
+            <p>Composée de maisons françaises et de maisons d’origine étrangère, ainsi que d’équipements et de services, la Cité offre aux résidents les meilleures conditions de logement, de travail et de rencontre.</p>
+            <p>Les résultats obtenus par la Cité universitaire de Paris sont à la hauteur des espérances que l’on avait placées en elle. Depuis 1925, des cohortes d’étudiantes et d’étudiants ont fréquenté la Cité et y ont fait une expérience remarquable d’échanges interculturels dans le cadre d’une organisation de type fédéral. Beaucoup parmi ces anciens résidents sont devenus des personnages célèbres, tels que le président Habib Bourguiba, le président Léopold Sédar Senghor, les Premiers ministres Pierre Elliot Trudeau et Raymond Barre. Beaucoup d’autres ont trouvé à la Cité le support matériel et intellectuel, complétant heureusement leur enseignement universitaire, qui leur a permis de mieux réussir leur vie personnelle. Bien peu ont oublié ces années passées Boulevard Jourdan comme le montrent les nombreux témoignages d’une touchante fidélité reçus par la Fondation nationale ou par l’Alliance internationale des anciens.</p>
+            <p>La CIUP a donc été et reste une institution universitaire, sociale et culturelle essentielle, un facteur incontesté de diffusion du français et de la culture française, un foyer efficace de meilleure connaissance réciproque des cultures du monde. Mais la fidélité à une vocation ne doit pas masquer les évolutions. La Cité universitaire du XXIème siècle ne peut être la même que celle des années 1920. Le monde a changé, les réalités universitaires aussi. L’accroissement du nombre des étudiants, l’allongement de la durée des études, la multiplication des universités tant en province qu’à l’étranger, l’ampleur prise par la politique de coopération, l’essor des échanges universitaires internationaux, ont transformé les flux d’étudiants venant à Paris. Incapable de faire face à toutes les demandes, la Cité tend à recruter les étudiants et chercheurs les plus avancés sur le plan universitaire. Leurs préoccupations, leurs besoins, leurs exigences, les conditions de leur séjour parisien ne sont pas les mêmes que ceux des générations précédentes. S’ils ne dédaignent pas l’atmosphère d’amitié qui s’établit dans la vie quotidienne de leur résidence, ils souhaitent trouver à travers la Cité, d’une part des contacts plus larges, d’autre part des occasions de satisfaire concrètement leur aspiration à l’organisation de la vie collective.</p>
+            <p>C’est dans cet esprit que le conseil d’administration, répondant au vœu des résidents, a créé la « Délégation des Comités de résidents », comprenant 12 membres élus par les Comités des maisons. Cette délégation sera appelée à formuler des avis et des propositions sur des questions d’intérêt commun, en ce qui concerne la vie et les activités collectives dans l’ensemble de la Cité.</p>
+            <p>La Cité universitaire a su également s’ouvrir sur l’extérieur sans porter pour autant atteinte à la communauté créée par les résidents au sein des maisons ou dans le cadre de leurs associations, l’Association internationale des résidents de la Cité universitaire de Paris (AIRCUP) et l’Association sportive de la Cité universitaire de Paris (ASCUP). Cette ouverture se fait selon deux voies différentes. Il y a en premier l’ouverture aux non-résidents, étudiants ou non, par le biais d’activités sportives, de la Bibliothèque centrale, par l’importance donnée aux activités culturelles tant dans les maisons que dans les salles de spectacle de la Maison internationale. En second lieu, il y a l’ouverture sur le monde scientifique. La Cité souhaite être également un lieu de colloques et de congrès auxquels seront associés, en fonction de leur spécialité et de leur niveau, des résidents. Le nombre de ces manifestations grandit, soit sous forme de symposia à vocation spécifique, soit sous celle, plus spectaculaire, de grands congrès internationaux.</p>
+            <p>La Cité universitaire est avant tout un lieu d’échange. Il s’effectue par la variété des équipements mis au service des résidents. Situé entre la porte d’Orléans et la Porte de Gentilly, la Cité offre en premier lieu un parc de 40 hectares avec, disséminées tout autour, les 40 maisons de styles architecturaux divers. Elle offre néanmoins un point central, celui de la Maison internationale où se trouvent les services communs : la bibliothèque, une maison de la presse, le restaurant, la cafétéria, 3 salles de spectacle (où se déploie une activité intense de création théâtrale, cinématographique, musicale qui fait de cet ensemble une véritable « maison de la culture internationale »), des équipements sportifs (tennis, piscine, gymnase), une banque, un bureau de poste. La Cité concentre également un hôpital, des salons d’apparat, des ateliers artistiques. Elle est ainsi une vraie petite ville, au cœur de l’agglomération parisienne, un hâvre de verdure au milieu d’un dense tissu urbain.</p>
+            <p>Les habitants de ce vaste ensemble, aux origines nationales et scientifiques multiples, sont des étudiants de haut niveau ou des chercheurs et professeurs venus en stage dans les établissements d’enseignement supérieur de la région parisienne. Parmi eux, les français ne sont qu’à peine 30 % et la Cité accueille plus d’une centaine de nationalités différentes, justifiant pleinement le titre de Cité internationale et universitaire. Mais, l’originalité de la Cité est plus profonde et plus subtile. Elle réside dans la volonté de créer une véritable communauté où les maîtres mots sont ceux de tolérance, compréhension, échange et respect de la spécificité de chacun. La dénomination des fondations : Maisons des provinces de France, Maison d’Italie, Maison de Norvège, Fondation agronomique…, ne doit pas faire illusion. A l’intérieur de chacune d’elles, les directeurs veillent à rassembler les personnalités les plus diverses. Chaque année, au moment de la rentrée universitaire, lorsque les commissions d’admission ont désigné ceux et celles qui vont bénéficier d’une chambre à la Cité, s’effectue un intense mouvement d’échanges de maison à maison afin d’établir le brassage des résidents et assurer la multiplicité des contacts entre les étudiants. C’est là une idée fondamentale, née avec l’institution elle-même, et sur ce point la Cité des années 2000 est fidèle à l’esprit de ses concepteurs.</p>
+            <p>En même temps qu’elle recherche et met en pratique cette ouverture, la Cité a pour vocation de préserver et d’entretenir une vie collective qui favorise les échanges entre cultures, alors que s’y côtoient chaque jour les futurs cadres de plus de 100 pays du monde. En ce sens, la présence parmi les résidents, de chercheurs et de professeurs sera de plus en plus mise à profit pour donner aux étudiants des occasions multipliées de rencontres avec des universitaires de haut niveau. A leur côté, le déroulement de multiples activités culturelles (soit dans les diverses résidences, soit à la Maison internationale) et la pratique des sports, doivent constituer autant de manifestations d’une vie communautaire au sein de la Cité, avec le concours actif des résidents, de leurs associations, des responsables permanents de la Fondation nationale et des maisons ainsi que de tous ceux qui souhaitent de l’extérieur apporter leur soutien à une action généreuse tournée vers l’avenir.</p>
+            <p>Institution spécifique par ses origines et ses modes de gestion, essentielle à la vie académique parisienne par son ampleur, la Cité poursuit sa mission fondamentale d’accueil et de rapprochement des élites de tous les pays et elle l’enrichit d’un souci nouveau de participation à l’épanouissement culturel, universitaire et social de ses membres.</p>
+            <!-- Les présidents, les délégués généraux et les secrétaires généraux administratifs portant sur la CIUP directement, j'ai choisi de les mettre dans le bioghist dédié à la CIUP -->
+            <list>
+                <head>Présidents à la CIUP depuis l’origine</head>
+                <item>André Honnorat (du 6 juin 1925 au 11 février 1948).</item>
+                <item>Raoul Dautry (du 26 février 1948 au 23 octobre 1951).</item>
+                <item>André François-Poncet (du 29 novembre 1951 au 25 février 1964).</item>
+                <item>Bernard Chenot (du 25 février 1964 au 27 février 1985).</item>
+                <item>Pierre Laurent (du 27 février 1985 au 14 juin 1996).</item>
+                <item>Michel Gentot (du 14 juin 1996 au 6 janvier 2006).</item>
+                <item>Marcel Pochard (du 2 mars 2006 à aujourd’hui).</item>
+            </list>
+            <list>
+                <head>Délégués généraux à la CIUP depuis l’origine</head>
+                <item>Jules Coulet (du 5 avril 1933 au 12 mai 1945).</item>
+                <item>André Lirondelle (du 12 mai 1945 au 21 décembre 1949).</item>
+                <item>André Marchaud (de mai 1950 au 9 juillet 1957).</item>
+                <item>Robert Garric (de 1958 au 19 juin 1967).</item>
+                <item>Pierre Marthelot (du 1er octobre 1967 à 1977).</item>
+                <item>Etienne Dalmasso (du 1er octobre 1977 à mars 1992).</item>
+                <item>Jean Binon (1992, intérim).</item>
+                <item>Joseph Goy (du 1er octobre 1992 au 1er novembre 1998).</item>
+                <item>Claude Ronceray (du 1er novembre 1998 à 2005).</item>
+                <item>Sylviane Tarsot-Gillery (depuis 2005).</item>
+            </list>
+            <list>
+                <head>Secrétaires généraux administratifs à la CIUP depuis l’origine</head>
+                <item>Louis Péhuet (du 5 juillet 1948 au 15 octobre 1957).</item>
+                <item>Daniel Tesseraud (du 27 novembre 1957 au 31 mars 1966).</item>
+                <item>Pierre Dhombres (du 1er avril 1966 à 1976).</item>
+                <item>Bénédict Manin (du 1er octobre 1976 au 30 septembre 1986).</item>
+                <item>Jacques Treffel (du 15 novembre 1986 à 1989).</item>
+                <item>Jean Binon (de octobre 1989 à 1996).</item>
+                <item>Claude Ronceray (de 1996 au 1er novembre 1998).</item>
+                <item>Cécile André (du 11 octobre 2004 à 2007).</item>
+                <item>Marie-Thérèse Texeraud (déléguée générale adjointe, depuis 2008).</item>
+            </list>
+        </bioghist>
+        <bioghist>
+            <head>Fondation nationale</head>
+            <p>La Cité internationale universitaire de Paris est une fondation nationale reconnue d’utilité publique, administrée par un Conseil composé de personnalités françaises et étrangères, de représentants du personnel et de résidents.</p>
+            <p>La Fondation nationale gère directement des services centraux et généraux (service financier, service du personnel, service technique et du domaine...) et assure la coordination de l’ensemble de l’Institution dans le respect des statuts, des règlements généraux et des actes de donation. Elle reçoit diverses subventions, notamment du ministère chargé de l’Enseignement supérieur.</p>
+            <p>L’administration générale est confiée au Délégué général, désigné par le conseil d’administration, et assisté dans sa tâche par le Délégué général adjoint ; un second Délégué général adjoint est élu par les directeurs des maisons.</p>
+        </bioghist>
+        <bioghist>
+            <head>Alliance internationale</head>
+            <p>L’Association des anciens résidents de la CIUP, dite Alliance internationale, favorise les relations entre les anciens résidents. Grâce aux liens qu’elle entretient dans tous les pays du monde, elle peut rendre des services aux résidents. Elle publie un bulletin de liaison et organise des manifestations culturelles témoignant de l’idéal des fondateurs.</p>
+        </bioghist>
+        <accessrestrict>
+            <p>Les conditions d’accès à ce fonds d’archives sont régies par le livre II du Code du patrimoine. Si certains articles sont librement communicables, d’autres ne le seront qu’à l’expiration d’un délai de 50 ans.</p>
+        </accessrestrict>
+        <otherfindaid>
+            <list>
+                <head>Archives nationales, site de Paris</head>
+                <item>AJ16/art. 7027-7044   Création de la cité, aménagement, Fondation nationale de la CIUP (fonds versé dans les années 1960 par les services du rectorat de Paris).</item>
+                <item>50 AP    Fonds André Honnorat.</item>
+                <item>307 AP	Fonds Raoul Dautry.</item>
+                <item>406 AP	Fonds Bernard Chenot.</item>
+                <item>462 AP	Fonds André François-Poncet.</item>
+            </list>
+            <list>
+                <head>Archives nationales, site de Fontainebleau</head>
+                <item>20010243/10-20	Gestion et organisation de la CIUP (versement du rectorat de Paris, chancellerie des universités). 1921-1994.</item>
+                <item>20090007/1-105	Théâtre : fonctionnement, activités, partenariat. 1936-1991.</item>
+                <item>20090014/1-343	Fondation nationale et maisons : création, construction et aménagement, rénovation, administration générale, finances, relations, résidents, animation. 1906-2002.</item>
+                <item>20090023/1-59	Alliance internationale : création, administration générale, relations, animation. 1925-2007.</item>
+                <item>20090024/1-38	Alliance internationale : plaques de métal, plaques de verre. 1936-1967.</item>
+                <item>20090025/1-12	Alliance internationale : enregistrements audiovisuels. s.d.</item>
+                <item>20090026/1-4	Alliance internationale : documents iconographiques. 1950-2002.</item>
+                <item>20090027/1	Fondation nationale : plaques de verre. s.d.</item>
+                <item>20090028/1-10	Alliance internationale : affiches. s.d.</item>
+            </list>
+            <list>
+                <head>Archives départementales des Alpes de Haute-Provence</head>
+                <item>4J/1-72	Fonds André Honnorat.</item>
+            </list>
+        </otherfindaid>
+        <arrangement><!-- encodage de la table des matières pour conserver les éléments de structuration de l'instrument de recherche -->
+            <head>Plan de classement</head>
+            <note>
+                <p>Les numéros placés en fin de titre renvoient aux numéros des articles de l’instrument de recherche.</p>
+            </note>
+            <list>
+                <item>
+                    <list>
+                        <head>Administration générale   art. 1-233</head>
+                        <item>Création de la Cité	art. 1-9</item>
+                        <item>
+                            <list>
+                                <head>Organes directeurs	art. 10-106</head>
+                                <item>Délégation générale	art. 10-51</item>
+                                <item>Secrétariat général (adjoint à la déléguée)	art. 52-73</item>
+                                <item>Conseils d’administration, bureau	art. 74-94</item>
+                                <item>Conférences des directeurs	art. 95-101</item>
+                                <item>Comités d’établissement	art. 102-105</item>
+                                <item>Comités d’étude et d’information	art. 106</item>
+                            </list>
+                        </item>
+                        <item>Organes consultatifs	art.107-111</item>
+                        <item>Relations extérieures	art. 112-128</item>
+                        <item>
+                            <list>
+                                <head>Communication	art. 129-147</head>
+                                <item>Interne	art. 129-139</item>
+                                <item>Externe	art. 140-147</item>
+                            </list>
+                        </item>
+                        <item>
+                            <list>
+                                <head>Gestion des ressources humaines	art. 148-165</head>
+                                <item>Recrutement et gestion des personnels	art. 148-161</item>
+                                <item>Médecine du travail	art. 162-163</item>
+                                <item>Commissions	art. 164-165</item>
+                            </list>
+                        </item>
+                        <item>
+                            <list>
+                                <head>Finances	art. 166-233</head>
+                                <item>Dommages de guerre et réquisitions	art. 166-171</item>
+                                <item>Commissions	art. 172-173</item>
+                                <item>Gestion budgétaire	art. 174-185</item>
+                                <item>Ressources	art. 186-224</item>
+                                <item>Affaires financières diverses	art. 225-227</item>
+                                <item>Banques	art. 228-231</item>
+                                <item>Service financier	art. 232-233</item>
+                            </list>
+                        </item>
+                    </list>
+                </item>
+                <item>
+                    <list>
+                        <head>Gestion du domaine et du patrimoine	art. 234-418</head>
+                        <item>Constitution du domaine	art. 234-247</item>
+                        <item>Aménagement et voirie	art. 248-252</item>
+                        <item>Architectes	art. 253-257</item>
+                        <item>Travaux et rénovations	art. 258-260</item>
+                        <item>Restaurants	art. 261-264</item>
+                        <item>Service technique	art. 265-274</item>
+                        <item>Sécurité et surveillance	art. 275-281</item>
+                        <item>Maison internationale	art. 282</item>
+                        <item>Outillage national	art. 283</item>
+                        <item>Pavillon administratif	art. 284</item>
+                        <item>Service médical	art. 285-288</item>
+                        <item>Hôpital	art. 289-317</item>
+                        <item>
+                            <list>
+                                <head>Gestion des biens immobiliers	art. 318-418</head>
+                                <item>Maisons rattachées	art. 318-366</item>
+                                <item>Maisons non-rattachées	art. 367-402</item>
+                                <item>Autres bâtiments	art. 403-418</item>
+                            </list>
+                        </item>
+                    </list>
+                </item>
+                <item>
+                    <list>
+                        <head>Animation du domaine	art. 419-486</head>
+                        <item>Maison internationale	art. 419-430</item>
+                        <item>Culture	art. 431-448</item>
+                        <item>Sports	art. 449-458</item>
+                        <item>Associations	art. 459-469</item>
+                        <item>Francophonie	art. 470</item>
+                        <item>Agence postale de la Cité	art. 471</item>
+                        <item>Restaurants	art. 472-481</item>
+                        <item>Tournages de films	art. 482-486</item>
+                    </list>
+                </item>
+                <item>
+                    <list>
+                        <head>Résidents	art. 487-1036</head>
+                        <item>Admissions	art. 487-495</item>
+                        <item>Vie des résidents	art. 496-511</item>
+                        <item>Affaires politiques	art. 512-515</item>
+                        <item>Annuaires	art. 516-539</item>
+                        <item>Dossiers des résidents	art. 540-1036</item>
+                    </list>
+                </item>
+                <item>
+                    <list>
+                        <head>Relations entre la cité et les maisons	art. 1037-1200</head>
+                        <item>Maisons rattachées	art. 1037-1105</item>
+                        <item>Maisons non-rattachées	art. 1106-1198</item>
+                        <item>Projets de création de maison	art. 1199-1200</item>
+                    </list>
+                </item>
+            </list>
+        </arrangement>
+        <dsc>            
+            <c level="series" id="s1">
+                <did>
+                    <unittitle>Administration générale</unittitle>
+                </did>
+                <c level="subseries" id="ss1">
+                    <did>
+                        <unittitle>Création de la Cité</unittitle>
+                    </did>
+                </c>
+                <c level="subseries" id="ss2">
+                    <did>
+                        <unittitle>Organes directeurs</unittitle>
+                    </did>
+                </c>
+                <c level="subseries" id="ss3">
+                    <did>
+                        <unittitle>Organes consultatifs</unittitle>
+                    </did>
+                </c>
+                <c level="subseries" id="ss4">
+                    <did>
+                        <unittitle>Relations extérieures</unittitle>
+                    </did>
+                </c>
+                <c level="subseries" id="ss5">
+                    <did>
+                        <unittitle>Communication</unittitle>
+                    </did>
+                    <c level="file" id="f1">
+                        <did>
+                            <unittitle>Communication interne</unittitle>
+                        </did>
+                    </c>
+                    <c level="file" id="f2">
+                        <did>
+                            <unittitle>Communication externe</unittitle>
+                        </did>
+                        <!-- les items étant le niveau le plus de description, c'est à dire les rapports, les ouvrages, les périodiques évoqués dans l'inventaire, le niveau de description des "art." se situe entre le file et l'item, d'où l'utilisation d'otherlevel et d'articlegrp pour le groupe des art., et de otherlevel et article pour chaque art. -->
+                        <c level="otherlevel" otherlevel="articlegrp" id="ag1">
+                            <did>
+                                <unitid>20090013 art. 140-142</unitid>
+                                <unittitle>Service de presse.</unittitle>
+                                <unitdate>1923-2000</unitdate>
+                            </did>
+                            <c level="otherlevel" otherlevel="article" id="a1">
+                                <did>
+                                    <unitid>art. 140</unitid>
+                                    <unittitle>Registres de coupures de presse.</unittitle>
+                                    <unitdate>(1933-1939)</unitdate>
+                                </did>
+                            </c>
+                            <c level="otherlevel" otherlevel="article" id="a2">
+                                <did>
+                                    <unitid>art. 141</unitid>
+                                </did>
+                                <!-- de même, les subdivisions des art. se répérant par le titre et une liste d'item sera décrite avec otherlevle et itemgrp pour garder la structure de l'instrument de recherche -->
+                                <!-- les item étant des titres bibliographiques, j'emploie un bibref dans le unittitle. Concernant la date, elle fait partie de la description bibliographique plutôt que de la description archivistique, d'où sa présence dans le bibref -->
+                                <c level="otherlevel" otherlevel="itemgrp" id="ig1">
+                                    <did>
+                                        <unittitle>Livres et Brochures concernant la Cité. </unittitle>
+                                        <unitdate>(1923-1987)</unitdate>
+                                    </did>
+                                </c>
+                                <c level="otherlevel" otherlevel="itemgrp" id="ig2">
+                                    <did>
+                                        <unittitle>Articles de presse, de revue.</unittitle>
+                                        <unitdate>(1925-2000)</unitdate>
+                                    </did>
+                                    <c level="item" id="i1">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>L’Université de Paris</title>
+                                                    <imprint>
+                                                        <date>juin-juillet 1925</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i2">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Cité Universitaire, les hommes qui l’ont conçue, les hommes qui l’ont réalisée, hier, aujourd’hui, demain, l’Animateur des temps nouveaux (revue, numéro spécial)</title>
+                                                    <imprint>
+                                                        <date>1929</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i3">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Cité Universitaire, son histoire, son état actuel, son avenir (extrait de La Presse Médicale)</title>
+                                                    <persname>Jean Crouzat</persname>
+                                                    <imprint>
+                                                        <geogname>Paris</geogname>
+                                                        <date>1929</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i4">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Cité Universitaire de Paris (extrait de la Revue de l’Université de Bruxelles, février-juillet 1931)</title>
+                                                    <persname>Léon Leclère</persname>
+                                                    <imprint>
+                                                        <geogname>Bruxelles</geogname>
+                                                        <date>1931</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i5">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Revue des Indépendants</title>
+                                                    <imprint>
+                                                        <geogname>Sanary (Var)</geogname>
+                                                        <date>novembre 1931</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i6">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>L’Illustration : La Maison Internationale de la Cité Universitaire</title>
+                                                    <persname>Georges Le Fèvre</persname>
+                                                    <imprint>
+                                                        <geogname>Paris</geogname>
+                                                        <date>21 mars 1936</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i7">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Maison Internationale de la Cité Universitaire (extrait de “L’Illustration”)</title>
+                                                    <persname>Georges Le Fèvre</persname>
+                                                    <imprint>
+                                                        <date>21 mars 1936</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i8">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>The Cité Universitaire of the University of Paris (extrait de The educational record)</title>
+                                                    <persname>Auguste V. Desclos</persname>
+                                                    <imprint>
+                                                        <geogname>Washington</geogname>
+                                                        <date>janvier 1937</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i9">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Vie universitaire et échange international – le cas de la Cité Internationale Universitaire de Paris (extrait de la revue de collaboration culturelle franco-japonnaise n°47 : Nichifutsu Bunka)</title>
+                                                    <persname>Etienne  Dalmasso</persname>
+                                                    <imprint>
+                                                        <date>mars 1986</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i10">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>GEO : Paris, le guide pratique (supplément gratuit au n° 235), Le Tour du monde des architectures</title>
+                                                    <persname>Olivier Picard</persname>
+                                                    <imprint>
+                                                        <date>septembre 1998</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i11">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Le Figaro Magazine : Ils mènent la vie de palace en “bossant”, c’est le privilège des pensionnaires de la Cité Universitaire de Paris</title>
+                                                    <imprint>
+                                                        <date>5 novembre 1988</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i12">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Revue de l’AMOPA : Un Grand Concert à la Cité Internationale Universitaire de Paris</title>
+                                                    <imprint>
+                                                        <date>mars 1989</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i13">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Distance : Promenade dans la Cité internationale Universitaire (p. 16-18)</title>
+                                                    <persname>Agnès Ravoyard</persname>
+                                                    <imprint>
+                                                        <date>septembre-octobre 1989</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i14">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>L’Evènement du Jeudi : 5ème anniversaire le 30 novembre 1989 à la Cité Internationale Universitaire de Paris : la nuit européenne</title>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i15">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title> La vie économique : Une interview du président du Conseil de la Concurrence, Pierre Laurent : “Nous ne régnons pas par la Terreur”</title>
+                                                    <persname>propos recueillis par Laurence Chavane</persname>
+                                                    <imprint>
+                                                        <date>12 décembre 1989</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                        <note><p>Président du Conseil d’administration de la Cité.</p></note>
+                                    </c>
+                                    <c level="item" id="i16">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Le Figaro Magazine : L’Université se fait européenne</title>
+                                                    <persname>Isabel Segovia</persname>
+                                                    <imprint>
+                                                        <date>25 février 1990</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i17">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>France Soir : La Cité Universitaire, cette inconnue</title>
+                                                    <persname>Carine Didier</persname>
+                                                    <imprint>
+                                                        <date>29 septembre 1990.</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i18">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>New Post, édition spéciale Cité Internationale Universitaire</title>
+                                                    <imprint>
+                                                        <date>octobre 1990.</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                        <note><p>Journal de la Poste</p></note>
+                                    </c>
+                                    <c level="item" id="i19">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Cité dans un jardin, géographie de la Cité Universitaire à Paris 14ème (extrait de la revue “Acta geographica”)</title>
+                                                    <imprint>
+                                                        <date>1993</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i20">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Bréhat une île hors saison</title>
+                                                    <persname>Bruno Caussé</persname>
+                                                    <corpname>Le Monde</corpname>
+                                                    <imprint>
+                                                        <date>2000</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i21">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Cité Universitaire de Paris (extrait de la revue “Science et Industrie”)</title>
+                                                    <imprint>
+                                                        <date>s.d.</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i22">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Cité Internationale Universitaire est lentement rénovée – Les pavillons d’accueil entre guerre et paix (article d’un journal non identifié)</title>
+                                                    <persname>Anne-Sophie Cathala</persname>
+                                                    <imprint>
+                                                        <date>s.d.</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i23">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>La Cité Internationale Universitaire de Paris se prépare à des travaux – Des architectes au chevet du campus (article d’un journal non identifié)</title>
+                                                    <persname>Cyril Hofstein</persname>
+                                                    <imprint>
+                                                        <date>s.d.</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i24">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>24 heures à la Cité internationale : Etudiants étrangers à Paris</title>
+                                                    <persname>Ali Laidi</persname>
+                                                    <imprint>
+                                                        <date>s.d.</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="item" id="i25">
+                                        <did>
+                                            <unittitle>
+                                                <bibref>
+                                                    <title>Ecusson du Collège de France</title>
+                                                    <imprint>
+                                                        <date>s.d.</date>
+                                                    </imprint>
+                                                </bibref>
+                                            </unittitle>
+                                        </did>
+                                    </c>
+                                    <c level="otherlevel" otherlevel="itemgrp" id="ig3">
+                                        <did>
+                                            <unittitle>Mémoires, exposés. </unittitle>
+                                            <unitdate>(1986-2000)</unitdate>
+                                        </did>
+                                        <c level="item" id="i26">
+                                            <did>
+                                                <unittitle>
+                                                    <bibref>
+                                                        <title>La vie politique d’André Honnorat (1868-1950)</title>
+                                                        <persname>Mémoire de Pascal Guerrini</persname>
+                                                        <imprint>
+                                                            <date>1986</date>
+                                                        </imprint>
+                                                    </bibref>
+                                                </unittitle>
+                                            </did>
+                                        </c>
+                                        <c level="item" id="i27">
+                                            <did>
+                                                <unittitle>
+                                                    <bibref>
+                                                        <title>Les contacts entre élites internationales dans le cadre de la Cité Internationale Universitaire de Paris (1925-1954)</title>
+                                                        <persname>Mémoire de Franck Sereni</persname>
+                                                        <imprint>
+                                                            <date>1988</date>
+                                                        </imprint>
+                                                    </bibref>
+                                                </unittitle>
+                                            </did>
+                                        </c>
+                                        <c level="item" id="i28">
+                                            <did>
+                                                <unittitle>
+                                                    <bibref>
+                                                        <title>La Cité Internationale Universitaire de Paris. Entre Passé et présent</title>
+                                                        <persname>Mémoire de Paola Rebughini</persname>
+                                                        <imprint>
+                                                            <date>septembre 1998</date>
+                                                        </imprint>
+                                                    </bibref>
+                                                </unittitle>
+                                            </did>
+                                        </c>
+                                        <c level="item" id="i29">
+                                            <did>
+                                                <unittitle>
+                                                    <bibref>
+                                                        <title>Analyse de la situation juridique de la CIUP</title>
+                                                        <persname>Mémoire d’Eric Baron</persname>
+                                                        <imprint>
+                                                            <date>2000</date>
+                                                        </imprint>
+                                                    </bibref>
+                                                </unittitle>
+                                            </did>
+                                        </c>
+                                    </c>
+                                </c>
+                                <c level="otherlevel" otherlevel="article" id="a3">
+                                    <did>
+                                        <unitid>art. 142</unitid>
+                                        <unittitle>Relations publiques : notes, correspondance, articles de presse, documentations diverses. </unittitle>
+                                        <unitdate>(1987-1991)</unitdate>
+                                    </did>
+                                </c>
+                            </c>
+                            <c level="otherlevel" otherlevel="articlegrp" id="ag2">
+                                <did>
+                                    <unitid>20090013 art. 143-147</unitid>
+                                    <unittitle>Actions de communication.</unittitle>
+                                    <unitdate>1931-1986</unitdate>
+                                </did>
+                                <c level="otherlevel" otherlevel="article" id="a4">
+                                    <did>
+                                        <unitid>art. 143</unitid>
+                                        <unittitle>Généralités : correspondance, notes, documents iconographiques, brochures, pièces annexes.</unittitle>
+                                        <unitdate>(1960-1977)</unitdate>
+                                    </did>
+                                </c>
+                                <c level="otherlevel" otherlevel="article" id="a5">
+                                    <did>
+                                        <unitid>art. 144</unitid>
+                                        <unittitle>Films sur la Cité : correspondance, notes, convention, pièces annexes. </unittitle>
+                                        <unitdate>(1950-1981)</unitdate>
+                                    </did>
+                                    <note><p>Notamment trois films : La Cité Universitaire, Un curieux visiteur et Un Monde Nouveau.</p></note>
+                                </c>
+                                <c level="otherlevel" otherlevel="article" id="a6">
+                                    <did>
+                                        <unitid>art. 145</unitid>
+                                        <unittitle>Visites de la Cité : correspondance, notes, affiches.</unittitle>
+                                        <unitdate>(1957-1986)</unitdate>
+                                    </did>
+                                </c>
+                                <c level="otherlevel" otherlevel="article" id="a7">
+                                    <did>
+                                        <unitid>art. 146</unitid>
+                                        <unittitle>Radiodiffusion.</unittitle>
+                                    </did>
+                                </c>
+                            </c>
+                        </c>
+                        
+                    </c>
+                </c>
+            </c>
+        </dsc>
+        
+    </archdesc>
+</ead>
