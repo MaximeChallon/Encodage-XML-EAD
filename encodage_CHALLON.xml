@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ead SYSTEM "ead.dtd">
 <ead>
+    <!-- L'encodage de cet instrument de recherche conserve les sauts de lignes présents sur la page de titre: ces derniers font sens en séparant les informations. ils sont indiqués par la balise <lb/>. Il conserve, de plus, au maximum, l'enchaînement des informations de l'instrument de recherche papier. -->
     <eadheader>
-        <eadid></eadid>
+        <eadid/>
         <filedesc>
             <titlestmt>
-                <!-- j'ai fais le choix de ne pas mettre les cotes comme appartenant au titre, mais au did de archdesc -->
+                <!-- j'ai fait le choix de ne pas mettre les cotes comme appartenant au titre, mais au did de archdesc -->
+                <!-- le titre de l'instrument de recherche est très général, mais l'opération de rétroconversion ne doit pas rajouter que peu d'informations: le titre est donc laissé tel qu'il est sur la page de titre -->
                 <titleproper>REPERTOIRE</titleproper>
                 <subtitle>MINISTERE : EDUCATION NATIONALE<lb/>DIRECTION : CITE INTERNATIONALE UNIVERSITAIRE DE PARIS (CIUP)<lb/>BUREAU : </subtitle>
-                <author>ARCHIVES NATIONALES<lb/>SECTION DES MISSIONS<lb/>CENTRE DES ARCHIVES CONTEMPORAINES</author>
             </titlestmt> 
+            <publicationstmt>
+                <publisher>ARCHIVES NATIONALES<lb/>SECTION DES MISSIONS<lb/>CENTRE DES ARCHIVES CONTEMPORAINES</publisher>
+            </publicationstmt>
         </filedesc>
         <!-- Les paragraphes de communicabilité et d'étendue matérielle présents sur la page de titre seront insérés dans l'archdesc et les balises correspondantes -->
         <profiledesc>
-            <creation>Cet instrument de recherche a été encodé en XML conformément à la DTD EAD (version 2002) par Maxime Challon pour l'évaluation du cours de XML/EAD du master 2 Technologies Numériques Appliquées à l'Histoire de l'Ecole nationale des Chartes.</creation>
+            <creation>Cet instrument de recherche a été encodé en XML sur le logiciel Oxygen conformément à la DTD EAD (version 2002) par Maxime Challon pour l'évaluation du cours de XML/EAD du master 2 Technologies Numériques Appliquées à l'Histoire de l'Ecole nationale des Chartes.</creation>
             <langusage>Instrument de recherche rédigé en <language langcode="fre">français</language></langusage>
-            <descrules>Ce répertoire numérique est rédigé conformément à la norme ISAD (G).</descrules>
+            <descrules>Ce répertoire numérique est rédigé conformément à la norme ISAD (G). L'indexation des noms de personnes et institutions est conforme à la norme AFNOR NF Z44-061 (06/1986).</descrules>
         </profiledesc>
     </eadheader>
     <archdesc level="fonds">
         <did>
-            <unitid>COTE CAC : 20090013<lb/>COTE INTERNE : </unitid>
+            <unitid>COTE CAC : 20090013<lb/>COTE INTERNE : </unitid><!-- la cote est tirée de la page de titre -->
+            <!-- l'instrument de recherche ne contenant aucune date qui lui est propre, j'ai décidé d'en ajouter une en fonction du nom du versement -->
+            <unitdate normal="2009">2009</unitdate>
             <origination>
                 <corpname normal="France. Ministère de l'Education Nationale. Direction de la Cité internationale universitaire de Paris (CIUP)">Le fonds présenté ci-dessous a été versé par la Fondation nationale de la Cité internationale universitaire de Paris (CIUP). Il provient de la délégation générale et du secrétariat général.</corpname>
-            </origination>            
+            </origination>
             <physdesc>
-                <dimensions> NOMBRE DE CARTONS..............865 DIMABS + 1 CARTON 48X34X13</dimensions>
-                <extent>1200 articles</extent>
-                <extent>dans 872 cartons de type Dimab et 1 carton 48x34x13.</extent>
+                <dimensions unit="boîte"> NOMBRE DE CARTONS..............865 DIMABS</dimensions>
+                <dimensions unit="cm"> + 1 CARTON 48X34X13</dimensions> <!-- ces informations sont tirées de la page de titre; celles qui suivent, de l'introduction -->
+                <extent unit="article">1200 articles</extent>
+                <extent unit="boîte">dans 872 cartons de type Dimab et 1 carton 48x34x13.</extent>
             </physdesc>
         </did>
+        <!-- les informations du accessrestrict proviennent de la page de titre -->
         <accessrestrict>
             <p>COMMUNICABILITE................LIBRE SAUF 50 ANS <lb/>(ART 47, 50, 53, 148-165, 195-200, 205, 206,<lb/>224, 225, 232, 267, 305-310, 315, 317, 446, 449,<lb/>450, 476, 478, 490-493, 496-499, 510-515, 517_539,<lb/>540-1036, 1050, 1089, 1096, 1106, 1116, 1161, 1172,<lb/>1188, 1192)</p>
         </accessrestrict>
+        <!-- L'information suivante a été ajoutée de manière à indiquer une étape dans le vie des archives -->
+        <acqinfo>
+            <p>Le fonds présenté ci-dessous a été versé par la <corpname normal="Cité internationale universitaire de Paris">CIUP</corpname> en <date normal="2009">2009</date>.</p>
+        </acqinfo>
         <!-- je suivrai les niveaux de titre de l'introduction en créant un bioghist par sous-titre avec une balise head puis des balises p: ici est présenté un historique du producteur. Seule la CIUP est dans le titre "producteur", mais les autres titres portant aussi sur la CIUP, je les considère comme faisant partie du bioghist -->
         <bioghist>
             <head>Cité Internationale Universitaire de Paris</head>
-            <p>Construite à la lisière de Paris, l’originalité de la Cité tient plus de sa conception que de l’importance quantitative de ces équipements. Elle s’est adaptée aux conditions changeantes de la vie estudiantine et universitaire et se découvre, dans le respect de sa mission fondamentale, des vocations nouvelles.</p>
+            <p>Construite à la lisière de Paris, l’originalité de la <corpname normal="Cité internationale universitaire de Paris">Cité</corpname> tient plus de sa conception que de l’importance quantitative de ces équipements. Elle s’est adaptée aux conditions changeantes de la vie estudiantine et universitaire et se découvre, dans le respect de sa mission fondamentale, des vocations nouvelles.</p>
             <p>Créée en 1925, elle doit son développement au concours de personnalités, d’institutions françaises et étrangères et de pays qui lui ont façonné une physionomie originale. Ce caractère particulier, à la fois universitaire, culturel et international, a été voulu dès l’origine par le créateur de la Cité, André Honnorat, et par tous ceux qui contribuèrent avec lui à son développement. Il sollicite, en France comme à l’étranger, les banquiers, les industriels, les collectivités locales, les gouvernements, afin de recueillir des fonds ; il multiplie voyages et conférences pour exposer l’idéal de la Cité, œuvre de paix pour les jeunes et par les jeunes. Afin de coordonner la somme des initiatives, on crée une Fondation nationale, personne morale de droit privé reconnue d’utilité publique, à laquelle l’Université de Paris donne mandat de construire et d’administrer la Cité. Le succès est immédiat.</p>
             <p>Suite à l’ouverture de la première maison, la fondation Emile et Louise Deutsch de la Meurthe, d’autres suivent. Un homme d’affaires belge, un comité de personnalités canadiennes, un mécène argentin, une riche propriétaire cubaine, des grandes écoles, des gouvernements étrangers décident de construire pour les étudiants de leur pays ou de leur établissement une maison à la Cité. De 1925 à 1939, on relève 19 créations de maisons auxquelles il faut ajouter l’aménagement du parc et en 1936, l’achèvement de la Maison internationale, financée par John D. Rockefeller Jr. Après l’épreuve de la guerre, le mouvement reprend et, de 1945 à 1969, 17 autres maisons sont ouvertes ainsi que l’Hôpital internationale universitaire de Paris (HIUP). La capacité d’accueil est désormais de 5000 à 5500 lits, répartis dans les maisons soumises à des règlements généraux communs mais ayant une autonomie plus ou moins grande par rapport à la Fondation nationale, selon qu’elles lui sont directement rattachées ou qu’elles ont conservé leur propre conseil d’administration. Depuis cette date, s’il n’y a pas eu de construction nouvelle, de nombreux travaux de rénovation ont été effectués afin de moderniser les équipements. Les mécènes sont sans doute moins nombreux qu’autrefois mais les gouvernements étrangers et les pouvoirs publics français apportent toujours leur aide à une institution dont il n’y a pas d’exemple réellement comparable dans le monde.</p>
             <p>Composée de maisons françaises et de maisons d’origine étrangère, ainsi que d’équipements et de services, la Cité offre aux résidents les meilleures conditions de logement, de travail et de rencontre.</p>
@@ -49,41 +61,116 @@
             <p>En même temps qu’elle recherche et met en pratique cette ouverture, la Cité a pour vocation de préserver et d’entretenir une vie collective qui favorise les échanges entre cultures, alors que s’y côtoient chaque jour les futurs cadres de plus de 100 pays du monde. En ce sens, la présence parmi les résidents, de chercheurs et de professeurs sera de plus en plus mise à profit pour donner aux étudiants des occasions multipliées de rencontres avec des universitaires de haut niveau. A leur côté, le déroulement de multiples activités culturelles (soit dans les diverses résidences, soit à la Maison internationale) et la pratique des sports, doivent constituer autant de manifestations d’une vie communautaire au sein de la Cité, avec le concours actif des résidents, de leurs associations, des responsables permanents de la Fondation nationale et des maisons ainsi que de tous ceux qui souhaitent de l’extérieur apporter leur soutien à une action généreuse tournée vers l’avenir.</p>
             <p>Institution spécifique par ses origines et ses modes de gestion, essentielle à la vie académique parisienne par son ampleur, la Cité poursuit sa mission fondamentale d’accueil et de rapprochement des élites de tous les pays et elle l’enrichit d’un souci nouveau de participation à l’épanouissement culturel, universitaire et social de ses membres.</p>
             <!-- Les présidents, les délégués généraux et les secrétaires généraux administratifs portant sur la CIUP directement, j'ai choisi de les mettre dans le bioghist dédié à la CIUP -->
-            <list>
+            <chronlist>
                 <head>Présidents à la CIUP depuis l’origine</head>
-                <item>André Honnorat (du 6 juin 1925 au 11 février 1948).</item>
-                <item>Raoul Dautry (du 26 février 1948 au 23 octobre 1951).</item>
-                <item>André François-Poncet (du 29 novembre 1951 au 25 février 1964).</item>
-                <item>Bernard Chenot (du 25 février 1964 au 27 février 1985).</item>
-                <item>Pierre Laurent (du 27 février 1985 au 14 juin 1996).</item>
-                <item>Michel Gentot (du 14 juin 1996 au 6 janvier 2006).</item>
-                <item>Marcel Pochard (du 2 mars 2006 à aujourd’hui).</item>
-            </list>
-            <list>
+                <chronitem>
+                    <date normal="06/06/1925-11/02/1948">(du 6 juin 1925 au 11 février 1948)</date>
+                    <event>André Honnorat</event></chronitem>
+                <chronitem>
+                    <date normal="26/02/1948-23/10/1951">(du 26 février 1948 au 23 octobre 1951)</date>
+                    <event>Raoul Dautry</event></chronitem>
+                <chronitem>
+                    <date normal="29/11/1951-25/02/1964">(du 29 novembre 1951 au 25 février 1964)</date>
+                    <event>André François-Poncet</event></chronitem>
+                <chronitem>
+                    <date normal="25/02/1964-27/02/1985">(du 25 février 1964 au 27 février 1985)</date>
+                    <event>Bernard Chenot</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="27/02/1985-14/06/1996">(du 27 février 1985 au 14 juin 1996)</date>
+                    <event>Pierre Laurent</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="14/06/1996-06/01/2006">(du 14 juin 1996 au 6 janvier 2006)</date>
+                    <event>Michel Gentot</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="02/03/2006-">(du 2 mars 2006 à aujourd’hui)</date>
+                    <event>Marcel Pochard</event>
+                </chronitem>
+            </chronlist>
+            <chronlist>
                 <head>Délégués généraux à la CIUP depuis l’origine</head>
-                <item>Jules Coulet (du 5 avril 1933 au 12 mai 1945).</item>
-                <item>André Lirondelle (du 12 mai 1945 au 21 décembre 1949).</item>
-                <item>André Marchaud (de mai 1950 au 9 juillet 1957).</item>
-                <item>Robert Garric (de 1958 au 19 juin 1967).</item>
-                <item>Pierre Marthelot (du 1er octobre 1967 à 1977).</item>
-                <item>Etienne Dalmasso (du 1er octobre 1977 à mars 1992).</item>
-                <item>Jean Binon (1992, intérim).</item>
-                <item>Joseph Goy (du 1er octobre 1992 au 1er novembre 1998).</item>
-                <item>Claude Ronceray (du 1er novembre 1998 à 2005).</item>
-                <item>Sylviane Tarsot-Gillery (depuis 2005).</item>
-            </list>
-            <list>
+                <chronitem>
+                    <date normal="05/04/1933-12/05/1945">(du 5 avril 1933 au 12 mai 1945)</date>
+                    <event>Jules Coulet</event
+                    ></chronitem>
+                <chronitem>
+                    <date normal="12/05/1945-21/12/1949">(du 12 mai 1945 au 21 décembre 1949)</date>
+                    <event>André Lirondelle</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="05/1950-09/07/1957">(de mai 1950 au 9 juillet 1957)</date>
+                    <event>André Marchaud</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="1958-19/06/1967">(de 1958 au 19 juin 1967)</date>
+                    <event>Robert Garric</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="01/10/1967-1977">(du 1er octobre 1967 à 1977)</date>
+                    <event>Pierre Marthelot</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="01/10/1977-03/1992">(du 1er octobre 1977 à mars 1992)</date>
+                    <event>Etienne Dalmasso</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="1992">(1992, intérim)</date>
+                    <event>Jean Binon</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="01/10/1992-01/11/1998">(du 1er octobre 1992 au 1er novembre 1998)</date>
+                    <event>Joseph Goy</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="01/11/1998-2005">(du 1er novembre 1998 à 2005)</date>
+                    <event>Claude Ronceray</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="2005-">(depuis 2005)</date>
+                    <event>Sylviane Tarsot-Gillery</event>
+                </chronitem>
+            </chronlist>
+            <chronlist>
                 <head>Secrétaires généraux administratifs à la CIUP depuis l’origine</head>
-                <item>Louis Péhuet (du 5 juillet 1948 au 15 octobre 1957).</item>
-                <item>Daniel Tesseraud (du 27 novembre 1957 au 31 mars 1966).</item>
-                <item>Pierre Dhombres (du 1er avril 1966 à 1976).</item>
-                <item>Bénédict Manin (du 1er octobre 1976 au 30 septembre 1986).</item>
-                <item>Jacques Treffel (du 15 novembre 1986 à 1989).</item>
-                <item>Jean Binon (de octobre 1989 à 1996).</item>
-                <item>Claude Ronceray (de 1996 au 1er novembre 1998).</item>
-                <item>Cécile André (du 11 octobre 2004 à 2007).</item>
-                <item>Marie-Thérèse Texeraud (déléguée générale adjointe, depuis 2008).</item>
-            </list>
+                <chronitem>
+                    <date normal="05/07/1948-15/10/1957">(du 5 juillet 1948 au 15 octobre 1957)</date>
+                    <event>Louis Péhuet</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="27/11/1957-31/02/1966">(du 27 novembre 1957 au 31 mars 1966)</date>
+                    <event>Daniel Tesseraud</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="01/04/1966-1976">(du 1er avril 1966 à 1976)</date>
+                    <event>Pierre Dhombres</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="01/10/1976-30/09/1986">(du 1er octobre 1976 au 30 septembre 1986)</date>
+                    <event>Bénédict Manin</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="15/11/1986-1989">(du 15 novembre 1986 à 1989)</date>
+                    <event>Jacques Treffel</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="10/1989-1996">(de octobre 1989 à 1996)</date>
+                    <event>Jean Binon</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="1996-01/11/1998">(de 1996 au 1er novembre 1998)</date>
+                    <event>Claude Ronceray</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="11/10/2004-2007">(du 11 octobre 2004 à 2007)</date>
+                    <event>Cécile André</event>
+                </chronitem>
+                <chronitem>
+                    <date normal="2008-">(déléguée générale adjointe, depuis 2008)</date>
+                    <event>Marie-Thérèse Texeraud</event>
+                </chronitem>
+            </chronlist>
         </bioghist>
         <bioghist>
             <head>Fondation nationale</head>
@@ -98,7 +185,7 @@
         <accessrestrict>
             <p>Les conditions d’accès à ce fonds d’archives sont régies par le livre II du Code du patrimoine. Si certains articles sont librement communicables, d’autres ne le seront qu’à l’expiration d’un délai de 50 ans.</p>
         </accessrestrict>
-        <otherfindaid>
+        <relatedmaterial>
             <list>
                 <head>Archives nationales, site de Paris</head>
                 <item>AJ16/art. 7027-7044   Création de la cité, aménagement, Fondation nationale de la CIUP (fonds versé dans les années 1960 par les services du rectorat de Paris).</item>
@@ -123,7 +210,7 @@
                 <head>Archives départementales des Alpes de Haute-Provence</head>
                 <item>4J/1-72	Fonds André Honnorat.</item>
             </list>
-        </otherfindaid>
+        </relatedmaterial>
         <arrangement><!-- encodage de la table des matières pour conserver les éléments de structuration de l'instrument de recherche -->
             <head>Plan de classement</head>
             <note>
@@ -234,63 +321,64 @@
                 </item>
             </list>
         </arrangement>
+        <!-- début de l'encodage du dsc. Seules les parties nécessaires à l'imbrication des pages 33-34 de l'instrument papier sont encodées -->
         <dsc>            
-            <c level="series" id="s1">
+            <c level="subfonds" id="sf1">
                 <did>
                     <unittitle>Administration générale</unittitle>
                 </did>
-                <c level="subseries" id="ss1">
+                <c level="series" id="s1">
                     <did>
                         <unittitle>Création de la Cité</unittitle>
                     </did>
                 </c>
-                <c level="subseries" id="ss2">
+                <c level="series" id="s2">
                     <did>
                         <unittitle>Organes directeurs</unittitle>
                     </did>
                 </c>
-                <c level="subseries" id="ss3">
+                <c level="series" id="s3">
                     <did>
                         <unittitle>Organes consultatifs</unittitle>
                     </did>
                 </c>
-                <c level="subseries" id="ss4">
+                <c level="series" id="s4">
                     <did>
                         <unittitle>Relations extérieures</unittitle>
                     </did>
                 </c>
-                <c level="subseries" id="ss5">
+                <c level="series" id="s5">
                     <did>
                         <unittitle>Communication</unittitle>
                     </did>
-                    <c level="file" id="f1">
+                    <c level="subseries" id="ss1">
                         <did>
                             <unittitle>Communication interne</unittitle>
                         </did>
                     </c>
-                    <c level="file" id="f2">
+                    <c level="subseries" id="ss2">
                         <did>
                             <unittitle>Communication externe</unittitle>
                         </did>
-                        <!-- les items étant le niveau le plus de description, c'est à dire les rapports, les ouvrages, les périodiques évoqués dans l'inventaire, le niveau de description des "art." se situe entre le file et l'item, d'où l'utilisation d'otherlevel et d'articlegrp pour le groupe des art., et de otherlevel et article pour chaque art. -->
-                        <c level="otherlevel" otherlevel="articlegrp" id="ag1">
+                        <!-- Les niveaux "item" étant les niveaux les plus bas de description, c'est à dire les rapports, les ouvrages, les périodiques évoqués dans l'inventaire, le niveau de description des "art." se situe entre le "subseries" et l'"item", d'où l'utilisation d'"otherlevel" et d'"filegrp" pour le groupe des "art.","file" pour chaque "art."-->
+                        <c level="otherlevel" otherlevel="filegrp" id="fg1">
                             <did>
                                 <unitid>20090013 art. 140-142</unitid>
                                 <unittitle>Service de presse.</unittitle>
                                 <unitdate>1923-2000</unitdate>
                             </did>
-                            <c level="otherlevel" otherlevel="article" id="a1">
+                            <c level="file" id="f1">
                                 <did>
                                     <unitid>art. 140</unitid>
                                     <unittitle>Registres de coupures de presse.</unittitle>
                                     <unitdate>(1933-1939)</unitdate>
                                 </did>
                             </c>
-                            <c level="otherlevel" otherlevel="article" id="a2">
+                            <c level="file" id="f2">
                                 <did>
                                     <unitid>art. 141</unitid>
                                 </did>
-                                <!-- de même, les subdivisions des art. se répérant par le titre et une liste d'item sera décrite avec otherlevle et itemgrp pour garder la structure de l'instrument de recherche -->
+                                <!-- de même, les subdivisions des art. se répérant par le titre et une liste d'item seront décrites avec otherlevel et itemgrp pour garder la structure de l'instrument de recherche -->
                                 <!-- les item étant des titres bibliographiques, j'emploie un bibref dans le unittitle. Concernant la date, elle fait partie de la description bibliographique plutôt que de la description archivistique, d'où sa présence dans le bibref -->
                                 <c level="otherlevel" otherlevel="itemgrp" id="ig1">
                                     <did>
@@ -682,7 +770,7 @@
                                         </c>
                                     </c>
                                 </c>
-                                <c level="otherlevel" otherlevel="article" id="a3">
+                                <c level="file" id="f3">
                                     <did>
                                         <unitid>art. 142</unitid>
                                         <unittitle>Relations publiques : notes, correspondance, articles de presse, documentations diverses. </unittitle>
@@ -690,47 +778,45 @@
                                     </did>
                                 </c>
                             </c>
-                            <c level="otherlevel" otherlevel="articlegrp" id="ag2">
+                        </c>
+                        <c level="otherlevel" otherlevel="filegrp" id="fg2">
+                            <did>
+                                <unitid>20090013 art. 143-147</unitid>
+                                <unittitle>Actions de communication.</unittitle>
+                                <unitdate>1931-1986</unitdate>
+                            </did>
+                            <c level="file" id="f4">
                                 <did>
-                                    <unitid>20090013 art. 143-147</unitid>
-                                    <unittitle>Actions de communication.</unittitle>
-                                    <unitdate>1931-1986</unitdate>
+                                    <unitid>art. 143</unitid>
+                                    <unittitle>Généralités : correspondance, notes, documents iconographiques, brochures, pièces annexes.</unittitle>
+                                    <unitdate>(1960-1977)</unitdate>
                                 </did>
-                                <c level="otherlevel" otherlevel="article" id="a4">
-                                    <did>
-                                        <unitid>art. 143</unitid>
-                                        <unittitle>Généralités : correspondance, notes, documents iconographiques, brochures, pièces annexes.</unittitle>
-                                        <unitdate>(1960-1977)</unitdate>
-                                    </did>
-                                </c>
-                                <c level="otherlevel" otherlevel="article" id="a5">
-                                    <did>
-                                        <unitid>art. 144</unitid>
-                                        <unittitle>Films sur la Cité : correspondance, notes, convention, pièces annexes. </unittitle>
-                                        <unitdate>(1950-1981)</unitdate>
-                                    </did>
-                                    <note><p>Notamment trois films : La Cité Universitaire, Un curieux visiteur et Un Monde Nouveau.</p></note>
-                                </c>
-                                <c level="otherlevel" otherlevel="article" id="a6">
-                                    <did>
-                                        <unitid>art. 145</unitid>
-                                        <unittitle>Visites de la Cité : correspondance, notes, affiches.</unittitle>
-                                        <unitdate>(1957-1986)</unitdate>
-                                    </did>
-                                </c>
-                                <c level="otherlevel" otherlevel="article" id="a7">
-                                    <did>
-                                        <unitid>art. 146</unitid>
-                                        <unittitle>Radiodiffusion.</unittitle>
-                                    </did>
-                                </c>
+                            </c>
+                            <c level="file" id="f5">
+                                <did>
+                                    <unitid>art. 144</unitid>
+                                    <unittitle>Films sur la Cité : correspondance, notes, convention, pièces annexes. </unittitle>
+                                    <unitdate>(1950-1981)</unitdate>
+                                </did>
+                                <note><p>Notamment trois films : La Cité Universitaire, Un curieux visiteur et Un Monde Nouveau.</p></note>
+                            </c>
+                            <c level="file" id="f6">
+                                <did>
+                                    <unitid>art. 145</unitid>
+                                    <unittitle>Visites de la Cité : correspondance, notes, affiches.</unittitle>
+                                    <unitdate>(1957-1986)</unitdate>
+                                </did>
+                            </c>
+                            <c level="file" id="f7">
+                                <did>
+                                    <unitid>art. 146</unitid>
+                                    <unittitle>Radiodiffusion.</unittitle>
+                                </did>
                             </c>
                         </c>
-                        
                     </c>
                 </c>
             </c>
         </dsc>
-        
     </archdesc>
 </ead>
