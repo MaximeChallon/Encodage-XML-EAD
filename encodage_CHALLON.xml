@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ead SYSTEM "ead.dtd">
 <ead>
-    <!-- L'encodage de cet instrument de recherche conserve les sauts de lignes présents sur la page de titre: ces derniers font sens en séparant les informations. ils sont indiqués par la balise <lb/>. Il conserve, de plus, au maximum, l'enchaînement des informations de l'instrument de recherche papier. -->
+    <!-- L'encodage de cet instrument de recherche conserve les sauts de lignes présents sur la page de titre: ces derniers font sens en séparant les informations. Ils sont indiqués par la balise <lb/>. Il conserve, de plus, au maximum, l'enchaînement des informations de l'instrument de recherche papier. -->
     <eadheader>
         <eadid/>
         <filedesc>
             <titlestmt>
                 <!-- j'ai fait le choix de ne pas mettre les cotes comme appartenant au titre, mais au did de archdesc -->
-                <!-- le titre de l'instrument de recherche est très général, mais l'opération de rétroconversion ne doit pas rajouter que peu d'informations: le titre est donc laissé tel qu'il est sur la page de titre -->
+                <!-- le titre de l'instrument de recherche est très général, mais l'opération de rétroconversion ne doit rajouter que peu d'informations: le titre est donc laissé tel qu'il est sur la page de titre -->
                 <titleproper>REPERTOIRE</titleproper>
                 <subtitle>MINISTERE : EDUCATION NATIONALE<lb/>DIRECTION : CITE INTERNATIONALE UNIVERSITAIRE DE PARIS (CIUP)<lb/>BUREAU : </subtitle>
             </titlestmt> 
@@ -41,7 +41,7 @@
         <accessrestrict>
             <p>COMMUNICABILITE................LIBRE SAUF 50 ANS <lb/>(ART 47, 50, 53, 148-165, 195-200, 205, 206,<lb/>224, 225, 232, 267, 305-310, 315, 317, 446, 449,<lb/>450, 476, 478, 490-493, 496-499, 510-515, 517_539,<lb/>540-1036, 1050, 1089, 1096, 1106, 1116, 1161, 1172,<lb/>1188, 1192)</p>
         </accessrestrict>
-        <!-- L'information suivante a été ajoutée de manière à indiquer une étape dans le vie des archives -->
+        <!-- L'information suivante a été ajoutée de manière à indiquer une étape dans la vie des archives -->
         <acqinfo>
             <p>Le fonds présenté ci-dessous a été versé par la <corpname normal="Cité internationale universitaire de Paris">CIUP</corpname> en <date normal="2009">2009</date>.</p>
         </acqinfo>
@@ -360,7 +360,7 @@
                         <did>
                             <unittitle>Communication externe</unittitle>
                         </did>
-                        <!-- Les niveaux "item" étant les niveaux les plus bas de description, c'est à dire les rapports, les ouvrages, les périodiques évoqués dans l'inventaire, le niveau de description des "art." se situe entre le "subseries" et l'"item", d'où l'utilisation d'"otherlevel" et d'"filegrp" pour le groupe des "art.","file" pour chaque "art."-->
+                        <!-- Les niveaux "item" étant les niveaux les plus bas de description, c'est à dire les rapports, les ouvrages, les périodiques évoqués dans l'inventaire, le niveau de description des "art." se situe entre le "subseries" et l'"item", d'où l'utilisation d'"otherlevel" et de "filegrp" pour le groupe des "art.",et de "file" pour chaque "art."-->
                         <c level="otherlevel" otherlevel="filegrp" id="fg1">
                             <did>
                                 <unitid>20090013 art. 140-142</unitid>
@@ -378,8 +378,8 @@
                                 <did>
                                     <unitid>art. 141</unitid>
                                 </did>
-                                <!-- de même, les subdivisions des art. se répérant par le titre et une liste d'item seront décrites avec otherlevel et itemgrp pour garder la structure de l'instrument de recherche -->
-                                <!-- les item étant des titres bibliographiques, j'emploie un bibref dans le unittitle. Concernant la date, elle fait partie de la description bibliographique plutôt que de la description archivistique, d'où sa présence dans le bibref -->
+                                <!-- de même, les subdivisions des "art." se répérant par le titre et une liste d'item seront décrites avec "otherlevel" et "itemgrp" pour garder la structure de l'instrument de recherche -->
+                                <!-- les "item" étant des titres bibliographiques, j'emploie un bibref dans le unittitle. Concernant la date, elle fait partie de la description bibliographique plutôt que de la description archivistique, d'où sa présence dans le bibref -->
                                 <c level="otherlevel" otherlevel="itemgrp" id="ig1">
                                     <did>
                                         <unittitle>Livres et Brochures concernant la Cité. </unittitle>
